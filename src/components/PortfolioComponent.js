@@ -39,10 +39,13 @@ class PortfolioComponent extends React.Component {
                         break;
                     case 3: row.last_names = event.target.value;
                         break;
+                    default:
+                        break;
                 }
             }
         });
         this.setState({ portfolios: list });
+        return;
     }
 
     handleClickOpen = (portfolio) => {

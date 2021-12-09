@@ -8,16 +8,16 @@ class PortfolioService {
         return axios.get(PORTFOLIOS_REST_API_URL);
     }
 
+    getTimesLines(userName) {
+        return axios.get(PORTFOLIOS_REST_API_URL + "/getTimeLines?user=" + userName);
+    }
+
     createPortfolio(portfolio) {
         return axios.post(PORTFOLIOS_REST_API_URL, portfolio);
     }
 
     updatePortfolio(portfolio) {
         return axios.put(PORTFOLIOS_REST_API_URL, portfolio);
-    }
-
-    getTimesLines(userName) {
-        return axios.get(PORTFOLIOS_REST_API_URL + "/getTimeLines?user=" + userName);
     }
 
 }

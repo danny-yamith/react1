@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.loading {
+  position: absolute !important;
+  transform: translate(-50%, -50%) !important;
+}

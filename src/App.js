@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import PortfolioComponent from './components/PortfolioComponent';
+import TripsComponent from './components/TripsComponent';
 
 function App() {
   return (
     <div className="App">
-        <PortfolioComponent />
+        <TripsComponent/>
     </div>
   );
 }
